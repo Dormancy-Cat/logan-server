@@ -1,0 +1,17 @@
+spring:
+  kafka:
+    bootstrap-servers: 192.168.10.214:63105
+    logan:
+      file:
+        parsing:
+          topic: logan.logfile.process
+    consumer:
+      auto-offset-reset: earliest
+
+  elasticsearch:
+    rest:
+      uris: http://localhost:9200
+
+logan:
+  logfile:
+    root-path: /
